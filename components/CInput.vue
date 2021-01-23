@@ -1,15 +1,11 @@
 <template>
   <div>
-    <label
-        :for="name"
-    >{{ name }}
-    </label>
+    <label :for="name">{{ name }}</label>
     <input
         :id="name"
         :type="type"
         :value="value"
-        @input="input"
-    >
+        @input="input" >
     <div class="error" v-if="error">
       {{error}}
     </div>
